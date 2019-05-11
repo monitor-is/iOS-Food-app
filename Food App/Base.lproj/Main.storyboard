@@ -158,7 +158,7 @@
                                     <constraint firstAttribute="height" constant="86" id="owU-Kk-mzg"/>
                                     <constraint firstAttribute="bottom" secondItem="wW2-wQ-CBY" secondAttribute="bottom" constant="16" id="rcx-vg-hgH"/>
                                     <constraint firstItem="wW2-wQ-CBY" firstAttribute="centerY" secondItem="4vc-eb-z9S" secondAttribute="centerY" id="taC-xT-ILO"/>
-                                    <constraint firstItem="wW2-wQ-CBY" firstAttribute="top" secondItem="4vc-eb-z9S" secondAttribute="top" constant="16" id="uFc-pq-lzN" customClass="Lo"/>
+                                    <constraint firstItem="wW2-wQ-CBY" firstAttribute="top" secondItem="4vc-eb-z9S" secondAttribute="top" constant="16" id="uFc-pq-lzN"/>
                                     <constraint firstItem="wW2-wQ-CBY" firstAttribute="centerX" secondItem="4vc-eb-z9S" secondAttribute="centerX" id="vRV-Hv-sLn"/>
                                     <constraint firstItem="wW2-wQ-CBY" firstAttribute="leading" secondItem="4vc-eb-z9S" secondAttribute="leading" constant="16" id="wAS-7i-2in"/>
                                 </constraints>
@@ -190,6 +190,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1113.75" y="118.30985915492958"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="4PF-Y0-Uu0">
+            <objects>
+                <viewController id="eiE-Nj-Zv8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3QY-70-Or0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="g3R-xZ-fIe"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="zjl-Dt-sNo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8dw-NE-Hhe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3366" y="454"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="vDy-Nh-i5a">
+            <objects>
+                <viewController id="xtv-iL-PuP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vH0-FA-Wpe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HVY-y7-liR"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="DK3-hV-mp6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14Z-ch-3t5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3367" y="-521"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="BME-at-GTJ">
+            <objects>
+                <tabBarController id="2Wp-Dw-XJh" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dRV-UQ-Vix">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="xtv-iL-PuP" kind="relationship" relationship="viewControllers" id="oO7-ks-CHo"/>
+                        <segue destination="eiE-Nj-Zv8" kind="relationship" relationship="viewControllers" id="SV5-Mc-CPw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vhE-Zu-woh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2601" y="118"/>
         </scene>
         <!--Вход-->
         <scene sceneID="5st-8w-2Oy">
@@ -259,6 +309,9 @@
                                                 <integer key="value" value="6"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onLoginClicked:" destination="M0E-Cn-YVN" eventType="touchUpInside" id="lrN-jr-nEu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -267,7 +320,7 @@
                                     <constraint firstAttribute="bottom" secondItem="Chc-Qx-CGW" secondAttribute="bottom" constant="16" id="J0r-sl-ht6"/>
                                     <constraint firstAttribute="height" constant="86" id="Pau-S5-GBF"/>
                                     <constraint firstItem="Chc-Qx-CGW" firstAttribute="leading" secondItem="bZF-Wu-Lw0" secondAttribute="leading" constant="16" id="SFs-RH-2xF"/>
-                                    <constraint firstItem="Chc-Qx-CGW" firstAttribute="top" secondItem="bZF-Wu-Lw0" secondAttribute="top" constant="16" id="SVY-a9-9Lw" customClass="Lo"/>
+                                    <constraint firstItem="Chc-Qx-CGW" firstAttribute="top" secondItem="bZF-Wu-Lw0" secondAttribute="top" constant="16" id="SVY-a9-9Lw"/>
                                     <constraint firstItem="Chc-Qx-CGW" firstAttribute="centerY" secondItem="bZF-Wu-Lw0" secondAttribute="centerY" id="hDe-0i-EFG"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Chc-Qx-CGW" secondAttribute="trailing" id="tLg-vH-mQ7"/>
                                 </constraints>
@@ -293,6 +346,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="wdd-3B-0sQ" id="j8f-mw-r8r"/>
+                        <outlet property="passwordTextField" destination="xzl-JJ-FpP" id="oEq-IK-BPu"/>
+                        <segue destination="2Wp-Dw-XJh" kind="show" identifier="onLogin" id="77s-RO-3A5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qUu-6H-cE5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
