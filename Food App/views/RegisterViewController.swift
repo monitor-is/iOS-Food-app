@@ -5,6 +5,9 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
+        if AuthService.isLoggedIn() {
+            performSegue(withIdentifier: "onAuth", sender: nil)
+        }
     }
 
     override func didReceiveMemoryWarning() {
