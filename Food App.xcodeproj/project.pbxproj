@@ -27,6 +27,9 @@
 		D53AB96A2287E52500D4CE98 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53AB9692287E52500D4CE98 /* MenuViewController.swift */; };
 		D53AB96D2287E61D00D4CE98 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53AB96C2287E61D00D4CE98 /* MenuCell.swift */; };
 		D53AB96F2287EC0800D4CE98 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53AB96E2287EC0800D4CE98 /* TabBarController.swift */; };
+		D569F0FC228B1E1600FC7B58 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569F0FB228B1E1600FC7B58 /* Order.swift */; };
+		D569F0FF228B1F3D00FC7B58 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569F0FE228B1F3D00FC7B58 /* OrdersViewController.swift */; };
+		D569F101228B1F5500FC7B58 /* OrdersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D569F100228B1F5500FC7B58 /* OrdersCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,9 @@
 		D53AB9692287E52500D4CE98 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		D53AB96C2287E61D00D4CE98 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		D53AB96E2287EC0800D4CE98 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		D569F0FB228B1E1600FC7B58 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		D569F0FE228B1F3D00FC7B58 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
+		D569F100228B1F5500FC7B58 /* OrdersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersCell.swift; sourceTree = "<group>"; };
 		FE03888E298D20F754A17CD6 /* Pods-Food App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food App.release.xcconfig"; path = "Target Support Files/Pods-Food App/Pods-Food App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +104,7 @@
 		D521B5202287138F0028E40E /* views */ = {
 			isa = PBXGroup;
 			children = (
+				D569F0FD228B1F1300FC7B58 /* orders */,
 				D53AB96B2287E60000D4CE98 /* menu */,
 				D521B524228715830028E40E /* ViewProtocols.swift */,
 				D53456AF2253556D005714CD /* LoginViewController.swift */,
@@ -158,6 +165,7 @@
 			children = (
 				D53AB9632287E16E00D4CE98 /* Product.swift */,
 				D53AB9652287E3A800D4CE98 /* ProductType.swift */,
+				D569F0FB228B1E1600FC7B58 /* Order.swift */,
 			);
 			path = entities;
 			sourceTree = "<group>";
@@ -169,6 +177,15 @@
 				D53AB96C2287E61D00D4CE98 /* MenuCell.swift */,
 			);
 			path = menu;
+			sourceTree = "<group>";
+		};
+		D569F0FD228B1F1300FC7B58 /* orders */ = {
+			isa = PBXGroup;
+			children = (
+				D569F0FE228B1F3D00FC7B58 /* OrdersViewController.swift */,
+				D569F100228B1F5500FC7B58 /* OrdersCell.swift */,
+			);
+			path = orders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +306,8 @@
 			files = (
 				D53AB96D2287E61D00D4CE98 /* MenuCell.swift in Sources */,
 				D53456B02253556D005714CD /* LoginViewController.swift in Sources */,
+				D569F101228B1F5500FC7B58 /* OrdersCell.swift in Sources */,
+				D569F0FC228B1E1600FC7B58 /* Order.swift in Sources */,
 				D521B527228716D70028E40E /* Extensions.swift in Sources */,
 				D53AB96F2287EC0800D4CE98 /* TabBarController.swift in Sources */,
 				D521B52922871D980028E40E /* LoginPresenter.swift in Sources */,
@@ -301,6 +320,7 @@
 				D521B5322287316D0028E40E /* LoginService.swift in Sources */,
 				D521B525228715830028E40E /* ViewProtocols.swift in Sources */,
 				D521B52E228725040028E40E /* Const.swift in Sources */,
+				D569F0FF228B1F3D00FC7B58 /* OrdersViewController.swift in Sources */,
 				D53AB9662287E3A800D4CE98 /* ProductType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

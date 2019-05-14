@@ -13,23 +13,13 @@ class MenuCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        setViewShadow()
-    }
-
-    private func setViewShadow() {
-        rectView.layer.shouldRasterize = true
-        rectView.layer.rasterizationScale = UIScreen.main.scale
-        rectView.layer.shadowColor = UIColor.black.cgColor
-        rectView.layer.shadowOpacity = 0.06
-        rectView.layer.shadowOffset = CGSize(width: 0, height: 8)
-        rectView.layer.shadowRadius = 5
-        rectView.layer.masksToBounds = false
+        self.setSubviewShadow(subview: rectView)
+        backgroundColor = UIColor.clear
     }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func showProduct(product: Product) {
+        nameLabel.text = product.name
+        descLabel.text = product.desc
+        productImage.af_setImage(withURL: URL(string: (product.image))!, imageTransition: .crossDissolve(0.3))
     }
-
 }

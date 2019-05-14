@@ -19,3 +19,15 @@ extension String {
         return String(self[start ..< end])
     }
 }
+
+extension UIView {
+    func setSubviewShadow(subview: UIView) {
+        subview.layer.shouldRasterize = true
+        subview.layer.rasterizationScale = UIScreen.main.scale
+        subview.layer.shadowColor = UIColor.black.cgColor
+        subview.layer.shadowOpacity = 0.06
+        subview.layer.shadowOffset = CGSize(width: 0, height: 8)
+        subview.layer.shadowRadius = 5
+        subview.layer.masksToBounds = false
+    }
+}
