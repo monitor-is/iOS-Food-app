@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		400A33C618239BB5AB8750BB /* Pods_Food_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843BE54D93716A4A9FDEC309 /* Pods_Food_App.framework */; };
+		D5098A4E228D450A00BEF7A4 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A4D228D450A00BEF7A4 /* CartViewController.swift */; };
+		D5098A50228D46B100BEF7A4 /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5098A4F228D46B100BEF7A4 /* CartCell.swift */; };
 		D521B525228715830028E40E /* ViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521B524228715830028E40E /* ViewProtocols.swift */; };
 		D521B527228716D70028E40E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521B526228716D70028E40E /* Extensions.swift */; };
 		D521B52922871D980028E40E /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521B52822871D980028E40E /* LoginPresenter.swift */; };
@@ -35,6 +37,8 @@
 /* Begin PBXFileReference section */
 		5273EE4359281555A4611531 /* Pods-Food App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food App.debug.xcconfig"; path = "Target Support Files/Pods-Food App/Pods-Food App.debug.xcconfig"; sourceTree = "<group>"; };
 		843BE54D93716A4A9FDEC309 /* Pods_Food_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Food_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5098A4D228D450A00BEF7A4 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		D5098A4F228D46B100BEF7A4 /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
 		D521B524228715830028E40E /* ViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocols.swift; sourceTree = "<group>"; };
 		D521B526228716D70028E40E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D521B52822871D980028E40E /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -93,6 +97,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D5098A4C228D44D600BEF7A4 /* cart */ = {
+			isa = PBXGroup;
+			children = (
+				D5098A4D228D450A00BEF7A4 /* CartViewController.swift */,
+				D5098A4F228D46B100BEF7A4 /* CartCell.swift */,
+			);
+			path = cart;
+			sourceTree = "<group>";
+		};
 		D521B51F228713730028E40E /* presenters */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +117,7 @@
 		D521B5202287138F0028E40E /* views */ = {
 			isa = PBXGroup;
 			children = (
+				D5098A4C228D44D600BEF7A4 /* cart */,
 				D569F0FD228B1F1300FC7B58 /* orders */,
 				D53AB96B2287E60000D4CE98 /* menu */,
 				D521B524228715830028E40E /* ViewProtocols.swift */,
@@ -145,7 +159,7 @@
 		D534569C225338C8005714CD /* Food App */ = {
 			isa = PBXGroup;
 			children = (
-				D53AB9622287E15600D4CE98 /* entities */,
+				D53AB9622287E15600D4CE98 /* models */,
 				D521B52A22871F8C0028E40E /* services */,
 				D521B5202287138F0028E40E /* views */,
 				D521B51F228713730028E40E /* presenters */,
@@ -160,14 +174,14 @@
 			path = "Food App";
 			sourceTree = "<group>";
 		};
-		D53AB9622287E15600D4CE98 /* entities */ = {
+		D53AB9622287E15600D4CE98 /* models */ = {
 			isa = PBXGroup;
 			children = (
 				D53AB9632287E16E00D4CE98 /* Product.swift */,
 				D53AB9652287E3A800D4CE98 /* ProductType.swift */,
 				D569F0FB228B1E1600FC7B58 /* Order.swift */,
 			);
-			path = entities;
+			path = models;
 			sourceTree = "<group>";
 		};
 		D53AB96B2287E60000D4CE98 /* menu */ = {
@@ -313,7 +327,9 @@
 				D521B52922871D980028E40E /* LoginPresenter.swift in Sources */,
 				D521B52C22871FA50028E40E /* AuthService.swift in Sources */,
 				D53456A0225338C8005714CD /* ViewController.swift in Sources */,
+				D5098A4E228D450A00BEF7A4 /* CartViewController.swift in Sources */,
 				D53AB9642287E16E00D4CE98 /* Product.swift in Sources */,
+				D5098A50228D46B100BEF7A4 /* CartCell.swift in Sources */,
 				D534569E225338C8005714CD /* AppDelegate.swift in Sources */,
 				D53AB96A2287E52500D4CE98 /* MenuViewController.swift in Sources */,
 				D53456B2225355B0005714CD /* RegisterViewController.swift in Sources */,
